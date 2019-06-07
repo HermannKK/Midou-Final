@@ -11,6 +11,7 @@ export default class Loading extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar backgroundColor="#faa73d" barStyle="light-content"/>
         <ImageBackground
           source={require("./assets/splash.png")}
           style={{
