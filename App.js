@@ -12,7 +12,9 @@ export default class App extends React.Component {
   }
   componentDidMount() {
     BackHandler.addEventListener('hardwareBackPress', this.handleBackButton);
+    console.disableYellowBox = true;
   }
+  
 
   componentWillUnmount() {
       BackHandler.removeEventListener('hardwareBackPress', this.handleBackButton);
